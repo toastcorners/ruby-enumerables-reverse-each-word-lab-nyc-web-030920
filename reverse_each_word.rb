@@ -1,9 +1,9 @@
 def reverse_each_word(str)
-  
-  arr = str.to_a
+  parts = []
+  arr = str.split
   arr.each do |r|
-  rev = r.reverse
-  parts << rev 
+  rvrsd = r.reverse
+  parts << rvrsd
   whole = parts.join(" ")
   return whole
 end
